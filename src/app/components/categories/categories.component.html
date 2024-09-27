@@ -1,0 +1,13 @@
+<div class="categories-container">
+    <h2 class="categories-title">CATEGORÍAS</h2>
+    <p class="categories-subtitle">Siente la pasión de conducir un Porsche.<br>
+      ¡Descubre el poder detrás del volante!</p>
+  
+    <div class="card-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      <div class="card" *ngFor="let model of porscheModels">
+        <img [src]="model.imgSrc" [alt]="model.name" class="card-image w-full h-48 object-cover">
+        <p class="card-name text-center font-bold mt-2">{{ model.name }}</p>
+      </div>
+    </div>
+  </div>
+  
